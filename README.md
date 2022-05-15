@@ -1,5 +1,4 @@
-![Coloring Black and White Images with Neural Networks](./README_images/coloring-black-and-white-images-with-neural-networks.svg)
-
+##COloring Grayscale Images with GANs
 ---
 
 
