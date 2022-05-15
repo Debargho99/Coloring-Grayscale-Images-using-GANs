@@ -1,4 +1,4 @@
-##COloring Grayscale Images with GANs
+## Coloring Grayscale Images with GANs
 ---
 
 
