@@ -2,17 +2,6 @@
 
 ---
 
-**A detailed tutorial covering the code in this repository:** [Coloring Black and White photos with Neural Networks](https://emilwallner.medium.com/colorize-b-w-photos-with-a-100-line-neural-network-53d9b4449f8d)
-
-**Plug:** I write about learning Machine learning online and independent research 👉 [Enjoy!](https://www.emilwallner.com/)
-
-The network is built in four parts and gradually becomes more complex. The first part is the bare minimum to understand the core parts of the network. It's built to color one image. Once I have something to experiment with, I find it easier to add the remaining 80% of the network. 
-
-For the second stage, the Beta version, I start automating the training flow. In the full version, I add features from a pre-trained classifier. The GAN version is not covered in the tutorial. It's an experimental version using some of the emerging best practices in image colorization.
-
-### 🍿 [Featured by Google >>>](https://www.youtube.com/watch?v=xKPk7tG2upc)
-
-**Note:** The display images below are cherry-picked. A large majority of the images are mostly black and white or are lightly colored in brown. A narrow and simple dataset often creates better results.
 
 ## Installation 
 
@@ -79,12 +68,8 @@ In breif, the generator comes from the [pix2pix model](https://arxiv.org/abs/161
 - I've implemented it for multi-gpu, however, all the models are copied on each GPU. This increases the [batch sizes which improves the result](https://arxiv.org/abs/1809.11096), but it only marginally increases images/sec. I'd recommend specifing on which GPU each model is loaded, to avoid merging the weights for each batch.
 
 
-## **Run the code on FloydHub**
-[![Run on FloydHub](https://static.floydhub.com/button/button.svg)](https://floydhub.com/run?template=https://github.com/floydhub/colornet-template)
 
-Click this button to open a [Workspace](https://blog.floydhub.com/workspaces/) on [FloydHub](https://www.floydhub.com/?utm_medium=readme&utm_source=colornet&utm_campaign=aug_2018) where you will find the same environment and dataset used for the *Full version*. 
 
 ## Acknowledgments
-- Thanks to IBM for donating computing power through their PowerAI platform
 - The full-model is a reproduction of Baldassarre alt el., 2017. [Code](https://github.com/baldassarreFe/deep-koalarization) [Paper](https://arxiv.org/abs/1712.03400)
 - The advanced model is inspired by the [pix2pix](https://arxiv.org/abs/1611.07004), [pix2pixHD](https://github.com/NVIDIA/pix2pixHD), [SA-GAN](https://arxiv.org/abs/1805.08318), and [DeOldify](https://github.com/jantic/DeOldify) models. 
